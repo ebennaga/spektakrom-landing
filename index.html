@@ -108,64 +108,22 @@
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
-      <div class="header-carousel position-relative mb-5">
-        <div class="owl-carousel-item position-relative">
-          <img class="img-fluid" src="img/heroimages.jpeg" alt="" />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(6, 3, 21, 0.5)"
-          >
-            <!-- HERO SECTION -->
-            <div class="hero-wrapper">
-              <div class="hero-overlay">
-                <h1>Welcome to<br />PT SPEKTRAKROM INDONESIA</h1>
-                <p>Helping Chemist To Get Trusted Answers</p>
-                <a href="#products" class="hero-btn">MORE INFO</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="owl-carousel-item position-relative">
-          <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(6, 3, 21, 0.5)"
-          >
-            <div class="container">
-              <div class="row justify-content-start">
-                <div class="col-10 col-lg-8">
-                  <h5
-                    class="text-white text-uppercase mb-3 animated slideInDown"
-                  >
-                    Transport & Logistics Solution
-                  </h5>
-                  <h1 class="display-3 text-white animated slideInDown mb-4">
-                    #1 Place For Your
-                    <span class="text-primary">Transport</span> Solution
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                    Vero elitr justo clita lorem. Ipsum dolor at sed stet sit
-                    diam no. Kasd rebum ipsum et diam justo clita et kasd rebum
-                    sea elitr.
-                  </p>
-                  <a
-                    href=""
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >Read More</a
-                  >
-                  <a
-                    href=""
-                    class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
-                    >Free Quote</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+    <section class="hero-section">
+      <img src="img/heroimages.jpeg" alt="Hero Image" class="hero-bg" />
+
+      <div class="hero-content">
+        <h1>
+          Welcome to<br />
+          PT SPEKTRAKROM<br />
+          INDONESIA
+        </h1>
+
+        <p>Helping Chemist To Get Trusted Answers</p>
+
+        <a href="#products" class="hero-btn">MORE INFO</a>
       </div>
-    </div>
+    </section>
+
     <!-- Carousel End -->
 
     <!-- About Start -->
@@ -1089,11 +1047,11 @@
 
     <!--adding js-->
     <script>
-      var copy = document.querySelector('.logos-slide').cloneNode(true);
-      document.querySelector('.logos').appendChild(copy);
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
     </script>
     <script>
-      const swiperEl = document.querySelector('.mySwiper');
+      const swiperEl = document.querySelector(".mySwiper");
       Object.assign(swiperEl, {
         slidesPerView: 3,
         spaceBetween: 20,

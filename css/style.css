@@ -75,8 +75,8 @@
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
   border: none;
-  content: '\f107';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   vertical-align: middle;
   margin-left: 8px;
@@ -126,7 +126,7 @@
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-link::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 0;
     height: 5px;
     top: -6px;
@@ -453,8 +453,8 @@
 
 .footer .btn.btn-link::before {
   position: relative;
-  content: '\f105';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 10px;
 }
@@ -497,7 +497,7 @@
   top: 0;
   width: 250px;
   height: 100%;
-  content: '';
+  content: "";
   z-index: 2;
 }
 
@@ -583,7 +583,7 @@ swiper-slide img {
 .hero-wrapper {
   width: 100%;
   height: 520px;
-  background-image: url('img/heroimages.jpeg'); /* ganti pakai image attach kamu */
+
   background-size: cover;
   background-position: center;
   position: relative;
@@ -677,7 +677,7 @@ swiper-slide img {
 }
 
 .contact-title::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 5px;
@@ -780,6 +780,13 @@ swiper-slide img {
 
 /* HERO MOBILE */
 @media (max-width: 768px) {
+  .hero-content h1 {
+    color: #ffffff;
+    font-size: 25px !important;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
   .hero-overlay h1 {
     font-size: 1.8rem;
   }
@@ -791,6 +798,19 @@ swiper-slide img {
   .hero-btn {
     padding: 10px 22px;
     font-size: 14px;
+  }
+  .hero-content {
+    position: relative; /* ⬅️ lepaskan absolute */
+    transform: none;
+    left: auto;
+    top: auto;
+
+    width: 90%;
+    max-width: 360px;
+    padding: 24px 22px !important;
+
+    background: rgba(20, 14, 12, 0.75);
+    text-align: left;
   }
 }
 
@@ -832,4 +852,66 @@ swiper-slide img {
 .card-content h3 {
   font-size: 14px;
   line-height: 1.4;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+/* BACKGROUND IMAGE */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT CARD */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 520px;
+  margin-left: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 36px 40px;
+  background: rgba(20, 14, 12, 0.85);
+}
+
+/* TITLE */
+.hero-content h1 {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* SUBTITLE */
+.hero-content p {
+  color: #eaeaea;
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+/* BUTTON */
+.hero-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  padding: 14px 34px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #e5e5e5;
 }
